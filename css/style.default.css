@@ -242,6 +242,21 @@ nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover {
   background: #62c6b1;
 }
 
+.about-section .progress.progress {
+  animation-name: animateBar;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: .4s;
+}
+@keyframes animateBar {
+  0% {transform: translateX(-100%);}
+  100% {transform: translateX(0);}
+}
+.about-section .progress.progress:hover:after {
+  display: block;
+  content: attr(value);
+}
+
 /*
 *
 * =====================
