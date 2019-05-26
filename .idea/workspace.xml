@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b563a9c5-7ed7-4bd9-ab43-1778783d4672" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.default.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/favicon.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/img/home.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/home.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logo-big.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/logo-big.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/person-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/person-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/person-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/person-4.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="75" column="54" selection-start-line="75" selection-start-column="54" selection-end-line="75" selection-end-column="54" />
+            <state relative-caret-position="118">
+              <caret line="576" column="16" selection-start-line="576" selection-start-column="16" selection-end-line="576" selection-end-column="16" />
               <folding>
                 <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#6;n#div#1;n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -48,6 +45,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Loh</find>
+      <find>loh</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -56,8 +54,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/style.default.css" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -104,7 +102,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558858520888" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558860843378" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -138,7 +136,7 @@
       <workItem from="1555052545434" duration="12157000" />
       <workItem from="1555337346183" duration="3504000" />
       <workItem from="1555341011615" duration="1871000" />
-      <workItem from="1558771420074" duration="4776000" />
+      <workItem from="1558771420074" duration="6709000" />
     </task>
     <task id="LOCAL-00001" summary="updated index">
       <created>1554049874555</created>
@@ -238,11 +236,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555343114812</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="updated the back image">
+      <created>1558858926038</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1558858926038</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26344000" />
+    <option name="totallyTimeSpent" value="28277000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -290,9 +295,20 @@
     <MESSAGE value="updated company info" />
     <MESSAGE value="updated works i have done" />
     <MESSAGE value="updated customer said about mee" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated customer said about mee" />
+    <MESSAGE value="updated the back image" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated the back image" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/bootstrap/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
@@ -316,20 +332,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="75" column="54" selection-start-line="75" selection-start-column="54" selection-end-line="75" selection-end-column="54" />
+        <state relative-caret-position="118">
+          <caret line="576" column="16" selection-start-line="576" selection-start-column="16" selection-end-line="576" selection-end-column="16" />
           <folding>
             <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#6;n#div#1;n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
