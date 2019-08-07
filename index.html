@@ -8,6 +8,8 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <!-- Bootstrap CSS-->
   <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
   <!-- Font Awesome CSS-->
@@ -31,12 +33,77 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143883392-1"></script>
+<!-- 
+  seach engin by google
+  read more here https://www.petanikode.com/laravel-mailer/ 
+-->
+  <script async src="https://cse.google.com/cse.js?cx=009509656807843258955:txzm_jw8inc">
+  </script><script async src="https://cse.google.com/cse.js?cx=009509656807843258955:txzm_jw8inc"></script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-143883392-1');
+
+  //  js for the animated text
+    var TxtType = function(el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 2000;
+      this.txt = '';
+      this.tick();
+      this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
+
+      if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+
+      this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+      var that = this;
+      var delta = 200 - Math.random() * 100;
+
+      if (this.isDeleting) { delta /= 2; }
+
+      if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+      }
+
+      setTimeout(function() {
+        that.tick();
+      }, delta);
+    };
+
+    window.onload = function() {
+      var elements = document.getElementsByClassName('typewrite');
+      for (var i=0; i<elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-type');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtType(elements[i], JSON.parse(toRotate), period);
+        }
+      }
+      // INJECT CSS
+      var css = document.createElement("style");
+      css.type = "text/css";
+      css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+      document.body.appendChild(css);
+    };
   </script>
 
   <!-- Tweaks for older IEs-->
@@ -67,6 +134,7 @@
   <header class="header">
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container"><a href="#intro" class="navbar-brand scrollTo">Amir Danish</a>
+        <div class="gcse-search"></div>
         <button type="button" data-toggle="collapse" data-target="#navbarcollapse"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
           class="navbar-toggler navbar-toggler-right"><span class="fa fa-bars"></span></button>
@@ -92,6 +160,11 @@
       <!-- <h1 data-animate="fadeInDown" class="text-shadow mb-5">Hello, سلام, नमस्ते !</h1> -->
       <p data-animate="slideInUp" class="h3 text-shadow text-400">I grind HTML and CSS and then weld them with latest
         web technology(ReactJs, Redux, PHP) into beautiful and efficient websites.</p>
+      <h3>
+        <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Amir.", "I Love To Code.", "I Love To Design.", "I Love to Develop." ]'>
+          <span class="wrap"></span>
+        </a>
+      </h3>
     </div>
   </section>
   <!-- About-->
