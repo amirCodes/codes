@@ -1,1 +1,10 @@
 /* your styles go here */
+
+Screen {
+    availWidth: 1920, availHeight: 1040, width: 1920, height: 1080, colorDepth: 24, pixelDepth: 24, top: 414, left: 1920, availTop: 414, availLeft: 1920
+}
+
+* html #container {
+    height: 100%;
+    overflow: visible;
+}
